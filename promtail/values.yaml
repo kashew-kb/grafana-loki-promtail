@@ -181,7 +181,8 @@ extraVolumes: []
 extraVolumeMounts: []
 
 # Extra args for the Promtail container.
-extraArgs: []
+extraArgs:
+  - -client.external-labels=cluster=idpgovprod
 # -- Example:
 # -- extraArgs:
 # --   - -client.external-labels=hostname=$(HOSTNAME)
